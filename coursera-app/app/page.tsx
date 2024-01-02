@@ -3,8 +3,8 @@ import CourseList from "@/ui/Courses/CourseList";
 
 async function getData() {
   const prisma = new PrismaClient();
-  const courseList = await prisma.courses.findMany({})
-  const usersList = await prisma.users.findMany({})
+  const courseList = await prisma.Courses.findMany({})
+  const usersList = await prisma.Users.findMany({})
   return {
     allCourses : courseList,
     allUsers : usersList
