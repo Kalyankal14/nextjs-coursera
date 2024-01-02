@@ -2,9 +2,12 @@ import { PrismaClient } from "@prisma/client";
 import CourseList from "@/ui/Courses/CourseList";
 
 async function getData() {
-  const prisma = new PrismaClient();
-  const courseList = await prisma.Courses.findMany({})
-  const usersList = await prisma.Users.findMany({})
+  // const prisma = new PrismaClient();
+  // const courseList = await prisma.Courses.findMany({})
+  // const usersList = await prisma.Users.findMany({})
+  const prismaData = new PrismaClient();
+  const courseList = await prismaData.Courses.findMany({});
+  const usersList = await prismaData.Users.findMany({});
   return {
     allCourses : courseList,
     allUsers : usersList
