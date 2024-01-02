@@ -25,7 +25,7 @@ export default function UserCard({ user }: UserCardProps) {
             {user.username}
           </Typography>
           <Typography color="blue-gray" className="font-medium" textGradient>
-            CEO / Co-Founder
+            {user.email}
           </Typography>
         </CardBody>
         <CardFooter className="flex justify-center gap-7 pt-2">
