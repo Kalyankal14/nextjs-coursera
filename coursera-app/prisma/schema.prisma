@@ -15,11 +15,11 @@ model Users {
   username String
   isLearner Boolean
   email String    @default("no email")
-   
 }
 model Courses{
   id Int @id @default(autoincrement())
   title String
   description String @default("no description")
   instructor String @default("instructor name")
+  image String @default("image URL")
 }

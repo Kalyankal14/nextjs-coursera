@@ -7,9 +7,10 @@ interface CourseListProps {
 }
 
 export default function CourseList({ list = [] }: CourseListProps) {
+  const sortedList = list.slice().sort((a, b) => a.title.localeCompare(b.title));
   return <>
     <div className='grid grid-cols-3 gap-2'>
-      {list.map(course => <CourseCard course={course} key={course.id} />)}
+      {sortedList.map(course => <CourseCard course={course} key={course.id} />)}
     </div>
   </>
 }

@@ -14,11 +14,12 @@ export default function CourseCard({ course }: CourseCardProps) {
       placeholder="Your Placeholder Value"
       className="mt-6 w-96"
     >
-      <CardHeader color="blue-gray" className="relative h-56" placeholder="Your Placeholder Value"
+      <CardHeader color="blue-gray" className="relative h-44" placeholder="Your Placeholder Value"
       >
         <img
-          src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+        src = {course.image}
           alt="Course Thumbnail"
+          
         />
       </CardHeader>
       <CardBody placeholder="Your Placeholder Value"
@@ -33,7 +34,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         </Typography>
         <Typography placeholder="Your Placeholder Value"
           color="gray" className="mb-2">
-          {course.instructor}
+          Instructor : {course.instructor}
         </Typography>
       </CardBody>
       <CardFooter placeholder="Your Placeholder Value"
