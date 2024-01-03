@@ -16,21 +16,34 @@ interface UserCardProps {
 export default function UserCard({ user }: UserCardProps) {
   return (
     <>
-      <Card className="w-96">
-        <CardHeader floated={false} className="h-80">
+      <Card className="w-96"
+      placeholder="Your Placeholder Value"
+      >
+        <CardHeader 
+        placeholder="Your Placeholder Value"
+        floated={false} className="h-80">
           <img src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" />
         </CardHeader>
-        <CardBody className="text-center">
-          <Typography variant="h4" color="blue-gray" className="mb-2">
+        <CardBody 
+        placeholder="Your Placeholder Value"
+        className="text-center">
+          <Typography 
+          placeholder="Your Placeholder Value"
+          variant="h4" color="blue-gray" className="mb-2">
             {user.username}
           </Typography>
-          <Typography color="blue-gray" className="font-medium" textGradient>
+          <Typography 
+          placeholder="Your Placeholder Value"
+          color="blue-gray" className="font-medium" textGradient>
             {user.email}
           </Typography>
         </CardBody>
-        <CardFooter className="flex justify-center gap-7 pt-2">
+        <CardFooter 
+        placeholder="Your Placeholder Value"
+        className="flex justify-center gap-7 pt-2">
           <Tooltip content="Like">
             <Typography
+            placeholder="Your Placeholder Value"
               as="a"
               href="#facebook"
               variant="lead"
@@ -42,6 +55,7 @@ export default function UserCard({ user }: UserCardProps) {
           </Tooltip>
           <Tooltip content="Follow">
             <Typography
+            placeholder="Your Placeholder Value"
               as="a"
               href="#twitter"
               variant="lead"
@@ -53,6 +67,7 @@ export default function UserCard({ user }: UserCardProps) {
           </Tooltip>
           <Tooltip content="Follow">
             <Typography
+            placeholder="Your Placeholder Value"
               as="a"
               href="#instagram"
               variant="lead"
