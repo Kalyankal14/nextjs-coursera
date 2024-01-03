@@ -6,8 +6,8 @@ async function getData() {
   // const courseList = await prisma.Courses.findMany({})
   // const usersList = await prisma.Users.findMany({})
   const prismaData = new PrismaClient();
-  const courseList = await prismaData.Courses.findMany({});
-  const usersList = await prismaData.Users.findMany({});
+  const courseList = await prismaData.courses.findMany({});
+  const usersList = await prismaData.users.findMany({});
   return {
     allCourses : courseList,
     allUsers : usersList
