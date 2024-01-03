@@ -6,6 +6,7 @@ import {
   CardFooter,
   Typography,
   Tooltip,
+  Input,
 } from '@material-tailwind/react';
 
 export {
@@ -16,4 +17,5 @@ export {
   Typography,
   Button,
   Tooltip,
+  Input
 }
