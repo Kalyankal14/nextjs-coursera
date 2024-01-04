@@ -13,8 +13,16 @@ async function getData() {
 }
 const searchValue = async (text : any) => {
   'use server'
-  let value = text ? text : ''
-return value
+  text = text ? text : '';
+  const prismaData = new PrismaClient();
+  const courseList = await prismaData.courses.findMany({
+    where:{
+      title : {
+        contains : text || ''
+      }
+    }
+  });
+return courseList
 }
 export default async function Home() {
   const data = await getData();

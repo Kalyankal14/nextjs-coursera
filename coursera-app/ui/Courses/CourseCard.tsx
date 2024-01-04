@@ -1,6 +1,8 @@
 import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Typography, Button } from '@/ui';
 import { Course } from '@/types';
+import { Loading } from '../components/loading';
+import Link from 'next/link';
 
 interface CourseCardProps {
   course: Course;
@@ -39,7 +41,10 @@ export default function CourseCard({ course }: CourseCardProps) {
       </CardBody>
       <CardFooter placeholder="Your Placeholder Value"
         className="pt-0">
-        <Button placeholder="Your Placeholder Value"
+          {/* <Link href={<Loading />} */}
+        <Button 
+       
+        placeholder="Your Placeholder Value"
         >Read More</Button>
       </CardFooter>
     </Card>
